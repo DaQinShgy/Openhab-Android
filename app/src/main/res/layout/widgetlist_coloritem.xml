@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:activatedBackgroundIndicator"
+    android:descendantFocusability="blocksDescendants">
+
+    <include layout="@layout/widgetlist_icontext" />
+
+    <ImageButton
+        style="@style/ActionButton"
+        android:id="@+id/up_button"
+        android:contentDescription="@string/content_description_color_up"
+        android:src="@drawable/ic_keyboard_arrow_up_themed_24dp" />
+
+    <ImageButton
+        style="@style/ActionButton"
+        android:id="@+id/select_color_button"
+        android:contentDescription="@string/content_description_open_color_wheel"
+        android:src="@drawable/ic_palette_outline_themed_24dp" />
+
+    <ImageButton
+        style="@style/ActionButton"
+        android:id="@+id/down_button"
+        android:contentDescription="@string/content_description_color_down"
+        android:src="@drawable/ic_keyboard_arrow_down_themed_24dp" />
+
+</LinearLayout>

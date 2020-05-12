@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/settings_connection_title">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:disableDependentsState="true"
+            android:key="default_openhab_demomode"
+            android:summary="@string/settings_openhab_demomode_summary"
+            android:title="@string/settings_openhab_demomode" />
+        <Preference
+            android:key="default_openhab_local_connection"
+            android:persistent="false"
+            android:title="@string/settings_openhab_connection"
+            android:dependency="default_openhab_demomode"
+            android:icon="@drawable/ic_home_outline_grey_24dp" />
+        <Preference
+            android:key="default_openhab_remote_connection"
+            android:persistent="false"
+            android:title="@string/settings_openhab_alt_connection"
+            android:dependency="default_openhab_demomode"
+            android:icon="@drawable/ic_tree_outline_grey_24dp" />
+        <org.openhab.habdroid.ui.preference.SslClientCertificatePreference
+            android:defaultValue="@string/settings_openhab_none"
+            android:key="default_openhab_sslclientcert"
+            android:summary="@string/settings_openhab_none"
+            android:title="@string/settings_openhab_sslclientcert"
+            android:dependency="default_openhab_demomode" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_sitemap_title">
+        <Preference
+            android:clickable="true"
+            android:key="default_openhab_clear_default_sitemap"
+            android:title="@string/settings_clear_default_sitemap" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="show_sitemaps"
+            android:title="@string/settings_show_sitemaps_in_drawer" />
+        <ListPreference
+            android:title="@string/settings_openhab_icon_format"
+            android:key="iconFormatType"
+            android:defaultValue="@string/settings_openhab_icon_format_value_png"
+            android:summary="%s"
+            android:entries="@array/iconTypeNames"
+            android:entryValues="@array/iconTypeValues"
+            android:icon="@drawable/ic_image_outline_grey_24dp" />
+        <Preference
+            android:clickable="true"
+            android:key="default_openhab_cleacache"
+            android:title="@string/mainmenu_openhab_clearcache" />
+        <org.openhab.habdroid.ui.preference.ChartScalingPreference
+            android:title="@string/settings_chart_scaling"
+            android:summary="@string/settings_chart_scaling_summary"
+            android:key="chartScalingFactor"
+            android:defaultValue="1.5" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="default_openhab_chart_hq"
+            android:summary="@string/settings_openhab_chart_hq_summary"
+            android:title="@string/settings_openhab_chart_hq" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_display_title">
+        <ListPreference
+            android:key="theme"
+            android:title="@string/settings_openhab_theme"
+            android:defaultValue="@string/theme_value_system"
+            android:summary="%s"
+            android:entries="@array/themeArray"
+            android:entryValues="@array/themeValues"
+            android:icon="@drawable/ic_palette_outline_grey_24dp" />
+        <com.jaredrummler.android.colorpicker.ColorPreferenceCompat
+            android:defaultValue="@color/openhab_orange"
+            android:key="theme_color"
+            app:cpv_dialogType="preset"
+            app:cpv_showColorShades="false"
+            app:cpv_allowCustom="false"
+            app:cpv_dialogTitle="@string/settings_select_a_color"
+            app:cpv_colorPresets="@array/accentColors"
+            android:title="@string/settings_accent_color"/>
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="default_openhab_screentimeroff"
+            android:summary="@string/settings_openhab_screentimeroff_summary"
+            android:title="@string/settings_openhab_screentimeroff" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="default_openhab_fullscreen"
+            android:title="@string/settings_openhab_fullscreen" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_misc_title">
+        <Preference
+            android:key="send_device_info"
+            android:dependency="default_openhab_demomode"
+            android:title="@string/send_device_info_to_server"
+            android:icon="@drawable/ic_cloud_upload_outline_grey_24dp"
+            android:persistent="false" />
+        <ListPreference
+            android:key="screen_lock"
+            android:title="@string/settings_screen_lock"
+            android:defaultValue="@string/settings_screen_lock_off_value"
+            android:entries="@array/screen_lock"
+            android:entryValues="@array/screen_lock_values"
+            android:icon="@drawable/ic_lock_outline_grey_24dp" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="taskerPlugin"
+            android:title="@string/settings_tasker_plugin"
+            android:summary="@string/settings_tasker_plugin_summary" />
+        <Preference
+            android:key="default_openhab_alertringtone"
+            android:persistent="false"
+            android:title="@string/settings_ringtone"
+            android:icon="@drawable/ic_bell_ring_outline_grey_24dp" />
+        <ListPreference
+            android:key="default_openhab_notification_vibration"
+            android:title="@string/settings_notification_vibration"
+            android:summary="%s"
+            android:defaultValue="@string/settings_notification_vibration_value_off"
+            android:entries="@array/notificationVibration"
+            android:entryValues="@array/notificationVibrationValues"
+            android:icon="@drawable/ic_vibration_grey_24dp" />
+        <Preference
+            android:clickable="true"
+            android:key="default_openhab_alertringtone_vibration"
+            android:title="@string/settings_notification_ringtone_vibration"
+            android:icon="@drawable/ic_bell_outline_grey_24dp" />
+        <SwitchPreference
+            android:key="data_saver"
+            android:defaultValue="false"
+            android:title="@string/data_saver_title"
+            android:summaryOn="@string/data_saver_on"
+            android:summaryOff="@string/data_saver_off" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="default_openhab_debug_messages"
+            android:title="@string/settings_debug_messages_title" />
+        <Preference
+            android:clickable="true"
+            android:key="default_openhab_log"
+            android:title="@string/view_log" />
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string-array name="themeArray">
+        <item>@string/theme_name_light</item>
+        <item>@string/theme_name_dark</item>
+        <item>@string/theme_name_battery_saver</item>
+        <item>@string/theme_name_black</item>
+    </string-array>
+
+    <string-array name="themeValues">
+        <item>@string/theme_value_light</item>
+        <item>@string/theme_value_dark</item>
+        <item>@string/theme_value_system</item>
+        <item>@string/theme_value_black</item>
+    </string-array>
+
+    <string-array name="iconTypeNames">
+        <item>@string/settings_openhab_icon_format_png</item>
+        <item>@string/settings_openhab_icon_format_svg</item>
+    </string-array>
+
+    <string-array name="iconTypeValues">
+        <item>@string/settings_openhab_icon_format_value_png</item>
+        <item>@string/settings_openhab_icon_format_value_svg</item>
+    </string-array>
+
+    <array name="valueColorsBrightBackground">
+        <item>#800000</item> <!-- maroon -->
+        <item>#ff0000</item> <!-- red -->
+        <item>#ffa500</item> <!-- orange -->
+        <item>#808000</item> <!-- olive -->
+        <item>#fdd835</item> <!-- yellow => use material yellow 600 -->
+        <item>#800080</item> <!-- purple -->
+        <item>#ff00ff</item> <!-- fuchsia -->
+        <item>#ff1493</item> <!-- pink -->
+        <item>#000000</item> <!-- white => use black -->
+        <item>#827717</item> <!-- lime => use material lime 900-->
+        <item>#008000</item> <!-- green -->
+        <item>#000080</item> <!-- navy -->
+        <item>#0000ff</item> <!-- blue -->
+        <item>#008080</item> <!-- teal -->
+        <item>#0097a7</item> <!-- aqua => use material cyan 700-->
+        <item>#000000</item> <!-- black -->
+        <item>#838996</item> <!-- silver => use darker silver -->
+        <item>#808080</item> <!-- grey -->
+        <item>#daa520</item> <!-- gold -->
+    </array>
+
+    <array name="valueColorsDarkBackground">
+        <item>#b23939</item> <!-- maroon => use brighter maroon -->
+        <item>#ff0000</item> <!-- red -->
+        <item>#ffa500</item> <!-- orange -->
+        <item>#808000</item> <!-- olive -->
+        <item>#ffff00</item> <!-- yellow -->
+        <item>#ce93d8</item> <!-- purple => use material purple 200 -->
+        <item>#ff00ff</item> <!-- fuchsia -->
+        <item>#ffc0cb</item> <!-- pink -->
+        <item>#ffffff</item> <!-- white -->
+        <item>#00ff00</item> <!-- lime -->
+        <item>#4CAF50</item> <!-- green => use material green 500 -->
+        <item>#3F51B5</item> <!-- navy => use material indigo 500 -->
+        <item>#2196F3</item> <!-- blue => use material blue 500 -->
+        <item>#008080</item> <!-- teal -->
+        <item>#00ffff</item> <!-- aqua -->
+        <item>#ffffff</item> <!-- black => use white -->
+        <item>#c0c0c0</item> <!-- silver -->
+        <item>#808080</item> <!-- grey -->
+        <item>#daa520</item> <!-- gold -->
+    </array>
+
+    <string-array name="valueColorNames" translatable="false">
+        <item>maroon</item>
+        <item>red</item>
+        <item>orange</item>
+        <item>olive</item>
+        <item>yellow</item>
+        <item>purple</item>
+        <item>fuchsia</item>
+        <item>pink</item>
+        <item>white</item>
+        <item>lime</item>
+        <item>green</item>
+        <item>navy</item>
+        <item>blue</item>
+        <item>teal</item>
+        <item>aqua</item>
+        <item>black</item>
+        <item>silver</item>
+        <item>grey</item>
+        <item>gold</item>
+    </string-array>
+
+    <string-array name="chartScalingEntries">
+        <item>@string/settings_chart_scaling_value_xs</item>
+        <item>@string/settings_chart_scaling_value_s</item>
+        <item>@string/settings_chart_scaling_value_m</item>
+        <item>@string/settings_chart_scaling_value_l</item>
+    </string-array>
+
+    <integer-array name="chartScalingValues">
+        <item>300</item>
+        <item>200</item>
+        <item>150</item>
+        <item>100</item>
+    </integer-array>
+
+    <string-array name="notificationVibration">
+        <item>@string/settings_notification_vibration_off</item>
+        <item>@string/settings_notification_vibration_short</item>
+        <item>@string/settings_notification_vibration_long</item>
+        <item>@string/settings_notification_vibration_twice</item>
+    </string-array>
+
+    <string-array name="notificationVibrationValues">
+        <item>@string/settings_notification_vibration_value_off</item>
+        <item>@string/settings_notification_vibration_value_short</item>
+        <item>@string/settings_notification_vibration_value_long</item>
+        <item>@string/settings_notification_vibration_value_twice</item>
+    </string-array>
+
+    <string-array name="screen_lock">
+        <item>@string/settings_screen_lock_off</item>
+        <item>@string/settings_screen_lock_kiosk</item>
+        <item>@string/settings_screen_lock_on</item>
+    </string-array>
+
+    <string-array name="screen_lock_values">
+        <item>@string/settings_screen_lock_off_value</item>
+        <item>@string/settings_screen_lock_kiosk_value</item>
+        <item>@string/settings_screen_lock_on_value</item>
+    </string-array>
+
+    <array name="accentColors">
+        <item>@color/openhab_orange</item>
+        <item>@color/indigo_500</item>
+        <item>@color/blue_grey_700</item>
+    </array>
+
+    <string-array name="send_device_info_schedule_values">
+        <item>15</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>720</item>
+    </string-array>
+
+    <string-array name="send_device_info_schedule">
+        <item>@string/send_device_info_schedule_15_minutes</item>
+        <item>@string/send_device_info_schedule_1_hour</item>
+        <item>@string/send_device_info_schedule_3_hours</item>
+        <item>@string/send_device_info_schedule_6_hours</item>
+        <item>@string/send_device_info_schedule_12_hours</item>
+    </string-array>
+</resources>
